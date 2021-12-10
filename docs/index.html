@@ -30,12 +30,17 @@
     <!-- End of header -->
     <!-- Menu -->
     <div class="menu" id="menu">
-        <div class="menu__top">
-            <div class="menu__control">
-                <input type="text" class="menu__input" placeholder="Что ищем?">
-                <span class="menu__search-icon"></span>
-                <button class="menu__close" aria-label="Закрыть"></button>
+        <div class="menu__control">
+            <input type="text" class="menu__input" placeholder="Что ищем?">
+            <span class="menu__search"></span>
+            <div class="menu__buttons menu__buttons--mobile">
+                <a href="#" class="menu__vision vision">
+                    <span class="vision__small">a</span>
+                    <span class="vision__big">A</span>
+                </a>
+                <a href="#" class="language menu__language">EN</a>
             </div>
+            <button class="menu__close" aria-label="Закрыть"></button>
         </div>
         <div class="menu__wrapper">
             <div class="menu__block">
@@ -115,13 +120,14 @@
             <div class="menu__block">
                 <a href="#" class="menu__heading">Частые вопросы</a>
             </div>
-            <div class="menu__buttons">
-                <a href="#" class="menu__vision vision">
-                    <span class="vision__small">a</span>
-                    <span class="vision__big">A</span>
-                </a>
-                <a href="#" class="language menu__language">EN</a>
-            </div>
+        </div>
+        <div class="menu__results"></div>
+        <div class="menu__buttons">
+            <a href="#" class="menu__vision vision">
+                <span class="vision__small">a</span>
+                <span class="vision__big">A</span>
+            </a>
+            <a href="#" class="language menu__language">EN</a>
         </div>
     </div>
     <!-- End of menu -->
