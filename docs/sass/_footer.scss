@@ -1,0 +1,96 @@
+.footer {
+    position: relative;
+    overflow: hidden;
+    padding: 124px 0 50px;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(-50%);
+        width: 692px;
+        height: 315px;
+        background-image: url(../img/dist/footer-background.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom bottom;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 84px 0 50px;
+        &::before {
+            height: 295px;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__block {
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            margin-top: 44px;
+            width: 100%;
+        }
+    }
+    &__list {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    &__item + &__item {
+        margin-top: 20px;
+    }
+    &__link {
+        font-size: 14px;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__subtitle {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+    &__email {
+        display: block;
+        margin-top: 44px;
+        width: fit-content;
+        font-size: 25px;
+        font-weight: normal;
+    }
+    &__policy {
+        display: block;
+        width: fit-content;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    &__copyright {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    &__vision {
+        position: absolute;
+
+        @media screen and (min-width: 1024px) {
+            left: 0;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            right: 0;
+        }
+        @media screen and (min-width: 768px) {
+            bottom: 0;
+        }
+        @media screen and (max-width: 767px) {
+            top: 38.5px;
+            right: 0;
+        }
+    }
+}

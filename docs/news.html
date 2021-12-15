@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAGESTAN - События</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header--section" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="index.html" class="header__link">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="news.html" class="header__link">События</a>
+                    </li>
+                </ul>
+                <div class="header__group">
+                    <button class="hamburger header__hamburger" aria-label="Меню">
+                        <svg class="hamburger__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <h1 class="header__title">События</h1>
+        </div>
+    </header>
+    <!-- End of header -->
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <div class="menu__closed-panel">
+            <button class="menu__close" aria-label="Закрыть"></button>
+        </div>
+        <div class="menu__control">
+            <input type="text" class="menu__input" placeholder="Что ищем?">
+            <span class="menu__search"></span>
+            <div class="menu__buttons menu__buttons--mobile">
+                <a href="#" class="menu__vision vision">
+                    <span class="vision__small">a</span>
+                    <span class="vision__big">A</span>
+                </a>
+                <a href="#" class="language menu__language">EN</a>
+            </div>
+        </div>
+        <div class="menu__start">
+            <div class="menu__wrapper">
+                <div class="menu__block">
+                    <a href="about.html" class="menu__heading">О Дагестане</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">История и народы Дагестана</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Что посмотреть</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Кухня дагестана</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="news.html" class="menu__link">События</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="guides.html" class="menu__link">Путеводители</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__heading">Гастрономия</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Кафе</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Рестораны</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Фудмолы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Рецепты блюд</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__heading">Популярные места</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Достопримечательности</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Отдых на природе</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Здоровье и красота</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Развлечения</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Шопинг</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__heading">Где остановиться?</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Отели</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Хостелы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Гостиници</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="routes.html" class="menu__heading">Маршруты</a>
+                </div>
+                <div class="menu__block">
+                    <a href="faq.html" class="menu__heading">Частые вопросы</a>
+                </div>
+            </div>
+            <div class="menu__buttons">
+                <a href="#" class="menu__vision vision">
+                    <span class="vision__small">a</span>
+                    <span class="vision__big">A</span>
+                </a>
+                <a href="#" class="language menu__language">EN</a>
+            </div>
+        </div>
+        <div class="menu__results">
+            <div class="tabs menu__tabs">
+                <ul class="tabs__list">
+                    <li class="tabs__item tabs__item--active">
+                        <button class="tabs__tab tabs__tab--grey">Гостиницы</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="tabs__tab tabs__tab--grey">Отели</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="tabs__tab tabs__tab--grey">Хостелы</button>
+                    </li>
+                </ul>
+                <div class="menu__scroll tabs__wrapper tabs__wrapper--active">
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как найти гостиницу?</h3>
+                        <div class="tabs__content">
+                            <p>решение по фотографии. Самое главное, что нужно знать, работая с сервисами бронирования <b>гостиниц</b> —&nbsp;фотографии, представленные на сайте бронирования, всегда или почти всегда будут далеки от реальности</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__scroll tabs__wrapper">
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как найти гостиницу?</h3>
+                        <div class="tabs__content">
+                            <p>решение по фотографии. Самое главное, что нужно знать, работая с сервисами бронирования <b>гостиниц</b> —&nbsp;фотографии, представленные на сайте бронирования, всегда или почти всегда будут далеки от реальности</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию <b>отелей</b> и гостиниц в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__scroll tabs__wrapper">
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как найти гостиницу?</h3>
+                        <div class="tabs__content">
+                            <p>решение по фотографии. Самое главное, что нужно знать, работая с сервисами бронирования <b>гостиниц</b> —&nbsp;фотографии, представленные на сайте бронирования, всегда или почти всегда будут далеки от реальности</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination menu__pagination">
+                <li class="pagination__item pagination__item--active">
+                    <a href="#" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of menu -->
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <!-- Main events -->
+        <section class="main-events" id="main-events">
+            <div class="container">
+                <article class="main-events__wrapper">
+                    <picture class="main-events__img">
+                        <img src="img/dist/main-events-img.png" alt="News">
+                    </picture>
+                    <div class="main-events__body">
+                        <h2 class="main-events__title">Открытие гиперцентра ИСМА</h2>
+                        <span class="main-events__data">13.07.22</span>
+                        <div class="content main-events__content">
+                            <p>
+                                Футболисты мадридского «Реала» уступили молдавскому «Шерифу» (1:2) в домашнем матче второго тура групповог раунда Лиги чемпионов.<br>
+                                Советский спорт<br>
+                                Встреча, проходившая на стадионе «Сантьяго Бернабеу» в Мадриде, завершилась победой гостей со счётом
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- End of main events -->
+        <!-- Events -->
+        <div class="events" id="events">
+            <div class="container">
+                <div class="tabs events__tabs">
+                    <ul class="tabs__list">
+                        <li class="tabs__item tabs__item--active">
+                            <button class="tabs__tab">Топ 10</button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__tab">Туризм</button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__tab">Новости</button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__tab">Статьи</button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__tab">Чем заняться?</button>
+                        </li>
+                    </ul>
+                    <div class="tabs__wrapper tabs__wrapper--active">
+                        <div class="events__wrapper">
+                            <div class="events__inner">
+                                <a href="#" class="events__item">
+                                    <div class="events__body">
+                                        <span class="events__title">В Москве запустили бесплатное экспресс-тестирование на COVID-19 в 20 местах</span>
+                                    </div>
+                                    <picture class="events__img">
+                                        <img src="img/dist/events-01.png" alt="Events">
+                                    </picture>
+                                </a>
+                                <a href="#" class="events__item">
+                                    <div class="events__body">
+                                        <span class="events__title">Сегодня сборные Англии и Венгрии проведут отборочный матч</span>
+                                    </div>
+                                    <picture class="events__img">
+                                        <img src="img/dist/events-02.png" alt="Events">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="events__grid">
+                                <a href="#" class="events__item" style="background-image: url(img/dist/next-places-04.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Кофе Хаус</span>
+                                        <span class="events__data">29.11.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item" style="background-image: url(img/dist/next-places-04.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Кофе Хаус <br>что то еще</span>
+                                        <span class="events__data">29.11.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item events__item--white" style="background-image: url(img/dist/next-places-03.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Пройдет форум КУПИПРОДА 2022</span>
+                                        <span class="events__data">29.12.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item events__item--white" style="background-image: url(img/dist/next-places-03.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Пройдет форум КУПИПРОДА 2022</span>
+                                        <span class="events__data">29.12.22</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__wrapper">
+                        <div class="events__wrapper">
+                            <div class="events__inner">
+                                <a href="#" class="events__item">
+                                    <div class="events__body">
+                                        <span class="events__title">В Москве запустили бесплатное экспресс-тестирование на COVID-19 в 20 местах</span>
+                                    </div>
+                                    <picture class="events__img">
+                                        <img src="img/dist/events-01.png" alt="Events">
+                                    </picture>
+                                </a>
+                                <a href="#" class="events__item">
+                                    <div class="events__body">
+                                        <span class="events__title">Сегодня сборные Англии и Венгрии проведут отборочный матч</span>
+                                    </div>
+                                    <picture class="events__img">
+                                        <img src="img/dist/events-02.png" alt="Events">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="events__grid">
+                                <a href="#" class="events__item" style="background-image: url(img/dist/next-places-04.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Кофе Хаус</span>
+                                        <span class="events__data">29.11.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item" style="background-image: url(img/dist/next-places-04.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Кофе Хаус <br>что то еще</span>
+                                        <span class="events__data">29.11.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item events__item--white" style="background-image: url(img/dist/next-places-03.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Пройдет форум КУПИПРОДА 2022</span>
+                                        <span class="events__data">29.12.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item events__item--white" style="background-image: url(img/dist/next-places-03.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Пройдет форум КУПИПРОДА 2022</span>
+                                        <span class="events__data">29.12.22</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__wrapper">
+                        <div class="events__wrapper">
+                            <div class="events__inner">
+                                <a href="#" class="events__item">
+                                    <div class="events__body">
+                                        <span class="events__title">В Москве запустили бесплатное экспресс-тестирование на COVID-19 в 20 местах</span>
+                                    </div>
+                                    <picture class="events__img">
+                                        <img src="img/dist/events-01.png" alt="Events">
+                                    </picture>
+                                </a>
+                                <a href="#" class="events__item">
+                                    <div class="events__body">
+                                        <span class="events__title">Сегодня сборные Англии и Венгрии проведут отборочный матч</span>
+                                    </div>
+                                    <picture class="events__img">
+                                        <img src="img/dist/events-02.png" alt="Events">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="events__grid">
+                                <a href="#" class="events__item" style="background-image: url(img/dist/next-places-04.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Кофе Хаус</span>
+                                        <span class="events__data">29.11.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item" style="background-image: url(img/dist/next-places-04.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Кофе Хаус <br>что то еще</span>
+                                        <span class="events__data">29.11.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item events__item--white" style="background-image: url(img/dist/next-places-03.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Пройдет форум КУПИПРОДА 2022</span>
+                                        <span class="events__data">29.12.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item events__item--white" style="background-image: url(img/dist/next-places-03.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Пройдет форум КУПИПРОДА 2022</span>
+                                        <span class="events__data">29.12.22</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__wrapper">
+                        <div class="events__wrapper">
+                            <div class="events__inner">
+                                <a href="#" class="events__item">
+                                    <div class="events__body">
+                                        <span class="events__title">В Москве запустили бесплатное экспресс-тестирование на COVID-19 в 20 местах</span>
+                                    </div>
+                                    <picture class="events__img">
+                                        <img src="img/dist/events-01.png" alt="Events">
+                                    </picture>
+                                </a>
+                                <a href="#" class="events__item">
+                                    <div class="events__body">
+                                        <span class="events__title">Сегодня сборные Англии и Венгрии проведут отборочный матч</span>
+                                    </div>
+                                    <picture class="events__img">
+                                        <img src="img/dist/events-02.png" alt="Events">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="events__grid">
+                                <a href="#" class="events__item" style="background-image: url(img/dist/next-places-04.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Кофе Хаус</span>
+                                        <span class="events__data">29.11.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item" style="background-image: url(img/dist/next-places-04.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Кофе Хаус <br>что то еще</span>
+                                        <span class="events__data">29.11.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item events__item--white" style="background-image: url(img/dist/next-places-03.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Пройдет форум КУПИПРОДА 2022</span>
+                                        <span class="events__data">29.12.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item events__item--white" style="background-image: url(img/dist/next-places-03.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Пройдет форум КУПИПРОДА 2022</span>
+                                        <span class="events__data">29.12.22</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__wrapper">
+                        <div class="events__wrapper">
+                            <div class="events__inner">
+                                <a href="#" class="events__item">
+                                    <div class="events__body">
+                                        <span class="events__title">В Москве запустили бесплатное экспресс-тестирование на COVID-19 в 20 местах</span>
+                                    </div>
+                                    <picture class="events__img">
+                                        <img src="img/dist/events-01.png" alt="Events">
+                                    </picture>
+                                </a>
+                                <a href="#" class="events__item">
+                                    <div class="events__body">
+                                        <span class="events__title">Сегодня сборные Англии и Венгрии проведут отборочный матч</span>
+                                    </div>
+                                    <picture class="events__img">
+                                        <img src="img/dist/events-02.png" alt="Events">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="events__grid">
+                                <a href="#" class="events__item" style="background-image: url(img/dist/next-places-04.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Кофе Хаус</span>
+                                        <span class="events__data">29.11.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item" style="background-image: url(img/dist/next-places-04.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Кофе Хаус <br>что то еще</span>
+                                        <span class="events__data">29.11.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item events__item--white" style="background-image: url(img/dist/next-places-03.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Пройдет форум КУПИПРОДА 2022</span>
+                                        <span class="events__data">29.12.22</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="events__item events__item--white" style="background-image: url(img/dist/next-places-03.png);">
+                                    <div class="events__body">
+                                        <span class="events__title events__title--sm">Пройдет форум КУПИПРОДА 2022</span>
+                                        <span class="events__data">29.12.22</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of events -->
+        <!-- News -->
+        <section class="news" id="news">
+            <div class="container">
+                <h2 class="section-heading">Новости</h2>
+                <div class="news__wrapper">
+                    <a href="#" class="news__item">
+                        <div class="news__body">
+                            <span class="news__title">В Москве запустили бесплатное экспресс-тестирование на COVID-19 в 20 местах</span>
+                            <picture class="news__img">
+                                <img src="img/dist/news-01.png" alt="News">
+                            </picture>
+                        </div>
+                        <span class="news__data">10 сентября</span>
+                    </a>
+                    <a href="#" class="news__item">
+                        <div class="news__body">
+                            <span class="news__title">В Москве запустили бесплатное экспресс-тестирование на COVID-19 в 20 местах</span>
+                            <picture class="news__img">
+                                <img src="img/dist/news-02.png" alt="News">
+                            </picture>
+                        </div>
+                        <span class="news__data">10 сентября</span>
+                    </a>
+                    <a href="#" class="news__item">
+                        <div class="news__body">
+                            <span class="news__title">В Москве запустили бесплатное экспресс-тестирование на COVID-19 в 20 местах</span>
+                            <picture class="news__img">
+                                <img src="img/dist/news-03.png" alt="News">
+                            </picture>
+                        </div>
+                        <span class="news__data">10 сентября</span>
+                    </a>
+                </div>
+                <a href="#" class="news__more btn">Показать ещё</a>
+            </div>
+        </section>
+        <!-- End of news -->
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="#" class="footer__vision vision">
+                        <span class="vision__small">a</span>
+                        <span class="vision__big">A</span>
+                    </a>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О Дагестанском крае</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Гиды и помощники</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Гастрономия</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Туризм</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Гостиницы / Отели</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Сервисы / Компании</a>
+                        </li>
+                    </ul>
+                    <div class="footer__block">
+                        <span class="footer__subtitle">Мы в соц сетях</span>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" aria-label="ВКонтакте">
+                                    <svg class="socials__icon socials__icon--vk">
+                                        <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" aria-label="Instagram">
+                                    <svg class="socials__icon socials__icon--instagram">
+                                        <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" aria-label="Facebook">
+                                    <svg class="socials__icon socials__icon--facebook">
+                                        <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="mailto:mintur@mail.ru" class="footer__email">mintur@mail.ru</a>
+                        <a href="#" class="footer__policy">Политика обработки персональных данных</a>
+                        <p class="footer__copyright">©2021 все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End of footer -->
+    </div>
+    <!-- End of wrapper -->
+    <!-- Scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

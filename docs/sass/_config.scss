@@ -1,0 +1,213 @@
+// variables
+$primary-font-family: 'AvenirNextCyr', sans-serif; // Body font-family
+$primary-font-size: 16px; // Body font-size
+$primary-line-height: 1.2; // Body line-height
+$primary-color: #000000;
+$white-color: #FFFFFF;
+$gold-color: #D1AC0B;
+$yellow-color: #E3BC13;
+$light-yellow-color: #F4C901;
+$red-color: #FF0000;
+$blue-color: #00A6F9;
+
+// common document styles - tags
+body {
+	position: relative;
+	overflow-x: hidden;
+    font-family: $primary-font-family;
+    font-size: $primary-font-size;
+    line-height: $primary-line-height;
+    background: #F4F7F9;
+}
+
+ul,
+ol,
+li {
+	display: block;
+	padding: 0;
+	margin: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 45px;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 35px;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    color: $primary-color;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: $gold-color;
+        text-decoration: none;
+    }
+    &:active {
+        color: $gold-color;
+        transition: all 0.1s linear;
+    }
+}
+
+picture {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+svg,
+svg path,
+svg line {
+    transition: all 0.3s ease;
+}
+
+// common document styles - class
+.scroll-disabled {
+    overflow: hidden;
+}
+
+.container {
+    padding: 0 30px;
+	margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+        padding: 0 15px;
+    }
+}
+
+.section-heading {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    
+    @media screen and (max-width: 767px) {
+        padding-left: 0;
+        font-size: 35px;
+    }
+}
+
+.language {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.vision {
+    display: flex;
+    align-items: flex-end;
+    width: fit-content;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    &__small {
+        display: block;
+        margin-bottom: 2px;
+        font-size: 17px;
+    }
+    &__big {
+        display: block;
+        font-size: 25px;
+    }
+}
+
+.btn {
+    display: block;
+    padding: 16px;
+    min-width: 220px;
+    width: fit-content;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+    color: $gold-color;
+    border: 4px solid $gold-color;
+    border-radius: 100px;
+    &:focus {
+        outline: none;
+    }
+    &:hover,
+    &:focus-visible {
+        text-decoration: underline;
+        color: $yellow-color;
+        border: 4px solid $yellow-color;
+    }
+}
+
+.btn-circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 85px;
+    max-width: 85px;
+    min-height: 85px;
+    max-height: 85px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 50%;
+    &:hover {
+        text-decoration: underline;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        transition: border 0.35s;
+    }
+    &--black {
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        &:hover {
+            color: $primary-color;
+            &::before {
+                border: 2px solid $primary-color;
+            }
+        }
+    }
+    &--white {
+        color: $white-color;
+        border: 1px solid $white-color;
+        &:hover {
+            color: $white-color;
+            &::before {
+                border: 2px solid $white-color;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        min-width: 76px;
+        max-width: 76px;
+        min-height: 76px;
+        max-height: 76px;
+    }
+}
