@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAGESTAN - Главная</title>
+    <title>DAGESTAN - О Дагестане</title>
     <!-- Styles -->
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header" id="header">
+    <header class="header header--section" id="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="#" class="logotype">
-                    <img src="img/dist/logotype.svg" alt="Logotype">
-                </a>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="index.html" class="header__link">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="about.html" class="header__link">О Дагестане</a>
+                    </li>
+                </ul>
                 <div class="header__group">
-                    <a href="#" class="language header__language">EN</a>
                     <button class="hamburger header__hamburger" aria-label="Меню">
                         <svg class="hamburger__icon">
                             <use xlink:href="img/dist/sprite.svg#icon-menu"></use>
@@ -258,269 +262,9 @@
     <!-- End of menu -->
     <!-- Wrapper -->
     <div class="wrapper">
-        <!-- Main -->
-        <section class="main" id="main">
-            <div class="container">
-                <div class="main__wrapper">
-                    <h1 class="main__title">Туристиче<wbr>ский<br> портал Дагестана</h1>
-                    <ul class="main__list">
-                        <li class="main__item">
-                            <a href="#" class="main__link">Куда сходить</a>
-                        </li>
-                        <li class="main__item">
-                            <a href="#" class="main__link">Где остановиться</a>
-                        </li>
-                        <li class="main__item">
-                            <a href="#" class="main__link">Гастрономия</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="pattern">
-                    <div class="pattern__item">
-                        <svg class="pattern__icon">
-                            <use xlink:href="img/dist/sprite.svg#pattern-orange"></use>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End of main -->
-        <!-- Places -->
-        <section class="places" id="places">
-            <div class="container">
-                <div class="places__wrapper">
-                    <div class="places__item places__item--heading">
-                        <h2 class="places__title">Самые интересные места, события и&nbsp;инфраструктура Республики</h2>
-                    </div>
-                    <a href="#" class="places__item places__item--recreation" style="background-image: url(img/dist/places-04.png);"> <!-- img/dist/places-gif.gif -->
-                        <span class="places__subtitle">Дастропримечательности</span>
-                    </a>
-                    <a href="#" class="places__item places__item--attraction" style="background-image: url(img/dist/places-01.png);">
-                        <span class="places__subtitle">Отдых</span>
-                    </a>
-                    <a href="#" class="places__item places__item--food" style="background-image: url(img/dist/places-02.png);">
-                        <span class="places__subtitle">Питание</span>
-                    </a>
-                    <a href="#" class="places__item places__item--taxi" style="background-image: url(img/dist/places-03.svg);">
-                        <span class="places__subtitle">Транспорт</span>
-                    </a>
-                    <div class="places__item places__item--news c-news">
-                        <div class="c-news__wrapper">
-                            <h3 class="c-news__title">Новости</h3>
-                            <div class="c-news__group">
-                                <span class="c-news__date">10 сентября</span>
-                                <a href="news.html" class="c-news__link">Ограничения движения на центральном пляже в г.Махачкала</a>
-                            </div>
-                            <div class="c-news__group">
-                                <span class="c-news__date">6 сентября</span>
-                                <a href="news.html" class="c-news__link">Открылся новый детская секция шахмат</a>
-                            </div>
-                            <div class="c-news__group">
-                                <span class="c-news__date">27 августа</span>
-                                <a href="news.html" class="c-news__link">Инстаграм: Участвуй конкурсах&nbsp;и выигрывай призы&nbsp;конкурсы, каждую неделю</a>
-                            </div>
-                            <div class="c-news__group">
-                                <a href="news.html" class="c-news__link">Все новости</a>
-                            </div>
-                        </div>
-                        <a href="news.html" class="c-news__title c-news__title--mobile">Новости</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End of places -->
-        <!-- Maps -->
-        <section class="maps" id="maps">
-            <div class="container">
-                <div class="maps__map">
-                    <img src="img/dist/map-background.png" alt="Map">
-                    <ul class="map-routes">
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem">
-                                <span class="map-routes__img" style="background-image: url(img/dist/map-routes-01.png);"></span>
-                                <span class="map-routes__name">Нарын-Кала</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem">
-                                <span class="map-routes__img" style="background-image: url(img/dist/map-routes-02.png);"></span>
-                                <span class="map-routes__name">Сулакский каньон</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem">
-                                <span class="map-routes__img" style="background-image: url(img/dist/map-routes-03.png);"></span>
-                                <span class="map-routes__name">Бархан Сарыкум</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem">
-                                <span class="map-routes__img" style="background-image: url(img/dist/map-routes-04.png);"></span>
-                                <span class="map-routes__name">Самурский лес</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem">
-                                <span class="map-routes__img" style="background-image: url(img/dist/map-routes-05.png);"></span>
-                                <span class="map-routes__name">Кизляр</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem map-routes__elem--sm">
-                                <span class="map-routes__name">Махачкала</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem map-routes__elem--sm">
-                                <span class="map-routes__name">Дербент</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem map-routes__elem--sm">
-                                <span class="map-routes__name">аул-Кубачи</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem map-routes__elem--sm">
-                                <span class="map-routes__name">Гуниб</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem map-routes__elem--sm">
-                                <span class="map-routes__name">Городские башни</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem map-routes__elem--sm">
-                                <span class="map-routes__name">аул-Гамсутль</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem map-routes__elem--sm">
-                                <span class="map-routes__name">Балхар</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem map-routes__elem--sm">
-                                <span class="map-routes__name">Ахты</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem map-routes__elem--sm">
-                                <span class="map-routes__name">аул-Куруш</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem map-routes__elem--sm">
-                                <span class="map-routes__name">гора Ярудан</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="maps__offer">
-                    <h2 class="maps__title">Легенды <br>Дагестана</h2>
-                    <a href="#" class="maps__btn btn">Начать путешествие</a>
-                    <ul class="map-routes map-routes--mobile">
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem">
-                                <span class="map-routes__img" style="background-image: url(img/dist/map-routes-01.png);"></span>
-                                <span class="map-routes__name">Нарын-Кала</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem">
-                                <span class="map-routes__img" style="background-image: url(img/dist/map-routes-02.png);"></span>
-                                <span class="map-routes__name">Сулакский каньон</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem">
-                                <span class="map-routes__img" style="background-image: url(img/dist/map-routes-03.png);"></span>
-                                <span class="map-routes__name">Бархан Сарыкум</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem">
-                                <span class="map-routes__img" style="background-image: url(img/dist/map-routes-04.png);"></span>
-                                <span class="map-routes__name">Самурский лес</span>
-                            </a>
-                        </li>
-                        <li class="map-routes__item">
-                            <a href="#" class="map-routes__elem">
-                                <span class="map-routes__img" style="background-image: url(img/dist/map-routes-05.png);"></span>
-                                <span class="map-routes__name">Кизляр</span>
-                            </a>
-                        </li>
-                        <a href="#" class="maps__more btn-circle btn-circle--white">Все</a>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- End of maps -->
-        <!-- Upcoming events -->
-        <section class="upcoming-events" id="upcoming-events">
-            <div class="container">
-                <div class="upcoming-events__block upcoming-events__block--mobile">
-                    <h2 class="upcoming-events__title">Ближайшие события</h2>
-                    <a href="news.html" class="upcoming-events__more btn-circle btn-circle--black">Все</a>
-                </div>
-                <div class="upcoming-events__slider">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="upcoming-events__block">
-                                    <h2 class="upcoming-events__title">Ближайшие события</h2>
-                                    <a href="news.html" class="upcoming-events__more btn-circle btn-circle--black">Все</a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="news.html" class="upcoming-events__item" style="background-image: url(img/dist/next-places-01.png);">
-                                    <span class="upcoming-events__name upcoming-events__name--background">Открытие гиперцентра ИСМА</span>
-                                    <span class="upcoming-events__date">13.07.22</span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="news.html" class="upcoming-events__item" style="background-image: url(img/dist/next-places-02.png);">
-                                    <span class="upcoming-events__name">Ярмарка ЭКОМОЛ</span>
-                                    <span class="upcoming-events__date">27.11.22</span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="news.html" class="upcoming-events__item" style="background-image: url(img/dist/next-places-03.png);">
-                                    <span class="upcoming-events__name upcoming-events__name--white">Пройдет форум КУПИПРОДАЙ 2022</span>
-                                    <span class="upcoming-events__date">27.12.22</span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="news.html" class="upcoming-events__item" style="background-image: url(img/dist/next-places-04.png);">
-                                    <span class="upcoming-events__name">Кофе Хаус</span>
-                                    <span class="upcoming-events__date">29.11.22</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End of upcoming events -->
-        <!-- FAQ section -->
-        <section class="faq-section" id="faq-section">
-            <div class="container">
-                <a href="faq.html" class="faq-section__heading">Частые вопросы</a>
-                <ul class="faq-section__list">
-                    <li class="faq-section__item">
-                        <a href="faq.html" class="faq-section__link">Насколоко безопастно отдыхать в Республике?</a>
-                    </li>
-                    <li class="faq-section__item">
-                        <a href="faq.html" class="faq-section__link">Есть ли банкоматы?</a>
-                    </li>
-                    <li class="faq-section__item">
-                        <a href="faq.html" class="faq-section__link">Как одется / что взять на отдых?</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- End of FAQ section -->
+        <!-- About -->
+        <div class="about" id="about"></div>
+        <!-- End of about -->
         <!-- Footer -->
         <footer class="footer" id="footer">
             <div class="container">
