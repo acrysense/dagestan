@@ -45,21 +45,39 @@
                 </div>
             </div>
             <div class="image-slider">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/dist/image-sliders-01.png" alt="Image">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/dist/image-sliders-02.png" alt="Image">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/dist/image-sliders-03.png" alt="Image">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/dist/image-sliders-04.png" alt="Image">
+                <div class="image-slider__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/dist/image-sliders-01.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/dist/image-sliders-02.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/dist/image-sliders-03.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/dist/image-sliders-04.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
                         </div>
                     </div>
+                </div>
+                <div class="image-slider__bottom">
+                    <div class="image-slider__info">
+                        <p class="image-slider__description image-slider__description--active">Описание фото 1, меняется текст при пролистывания фото</p>
+                        <p class="image-slider__description">Описание фото 2, меняется текст при пролистывания фото</p>
+                        <p class="image-slider__description">Описание фото 3, меняется текст при пролистывания фото</p>
+                        <p class="image-slider__description">Описание фото 4, меняется текст при пролистывания фото</p>
+                    </div>
+                    <button class="swiper-button-next btn-circle btn-circle--black" aria-label="Далее">
+                        <svg class="btn-circle__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-next-black"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="section-content section-content--grey">
@@ -84,11 +102,89 @@
                     <p>Нет смысла кого-то переубеждать. Каждый человек волен жить так, как хочет. Поэтому буду признательна тем, кому не нравится мой образ жизни, оставить мою страничку с миром и идти своей дорогой.</p>
                     <p>Для тех, кому интересно узнать об особенностях проживания и отдыха в Абхазии, увидеть местные красоты и необычные места, милости прошу!</p>
                 </div>
-                <div class="section-content__right"></div>
+                <div class="section-content__right section-content__right--end">
+                    <button class="c-liked guide__liked">
+                        <div class="c-liked__icon">
+                            <svg>
+                                <use xlink:href="img/dist/sprite.svg#icon-like"></use>
+                            </svg>
+                        </div>
+                        <span class="c-liked__value">25 341</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
     <!-- End of guide -->
+    <!-- Populars -->
+    <section class="populars populars--mb" id="populars">
+        <div class="container">
+            <div class="section-content">
+                <div class="section-content__left">
+                    <h2 class="section-heading">Популярное</h2>
+                    <div class="populars__wrapper">
+                        <a href="#" class="populars__item" style="background-image: url(img/dist/populars-img.png);">
+                            <span class="populars__title">Открытие гиперцентра ИСМА</span>
+                        </a>
+                        <a href="#" class="populars__item" style="background-image: url(img/dist/populars-img.png);">
+                            <span class="populars__title">Открытие гиперцентра ИСМА</span>
+                        </a>
+                    </div>
+                    <div class="main-events main-events--mt">
+                        <article class="main-events__item main-events__item--sm">
+                            <picture class="main-events__img">
+                                <img src="img/dist/main-events-img.png" alt="News">
+                            </picture>
+                            <div class="main-events__body">
+                                <div class="main-events__inner">
+                                    <h2 class="main-events__title">Открытие гиперцентра ИСМА</h2>
+                                    <button class="main-events__control" aria-label="Больше"></button>
+                                </div>
+                                <span class="main-events__data">13.07.22</span>
+                                <div class="content main-events__content">
+                                    <p>
+                                        Футболисты мадридского «Реала» уступили молдавскому «Шерифу» (1:2) в домашнем матче второго тура групповог раунда Лиги чемпионов.<br>
+                                        Советский спорт<br>
+                                        Встреча, проходившая на стадионе «Сантьяго Бернабеу» в Мадриде, завершилась победой гостей со счётом
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="main-events__item main-events__item--sm">
+                            <picture class="main-events__img">
+                                <img src="img/dist/main-events-img.png" alt="News">
+                            </picture>
+                            <div class="main-events__body">
+                                <div class="main-events__inner">
+                                    <h2 class="main-events__title">Открытие гиперцентра ИСМА</h2>
+                                    <button class="main-events__control" aria-label="Больше"></button>
+                                </div>
+                                <span class="main-events__data">13.07.22</span>
+                                <div class="content main-events__content">
+                                    <p>
+                                        Футболисты мадридского «Реала» уступили молдавскому «Шерифу» (1:2) в домашнем матче второго тура групповог раунда Лиги чемпионов.<br>
+                                        Советский спорт<br>
+                                        Встреча, проходившая на стадионе «Сантьяго Бернабеу» в Мадриде, завершилась победой гостей со счётом
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="section-content__right">
+                    <div class="section-content__controls">
+                        <a href="#" class="populars__control btn-circle btn-circle--black">
+                            <svg class="btn-circle__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-arrow-prev-black"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="populars__control btn-circle btn-circle--black">Ещё</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of populars -->
     <!-- Scripts -->
     <script src="js/vendor.min.js"></script>
     <script src="js/app.min.js"></script>
