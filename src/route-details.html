@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAGESTAN - Маршрут</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Gallery slider -->
+    <section class="gallery-slider" id="gallery-slider">
+        <div class="gallery-slider__slider gallery-slider__slider--gradient">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/dist/routes-details-background.jpg" alt="Image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/dist/about-main-background.jpg" alt="Image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/dist/routes-details-background.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="swiper-navigation container">
+                    <button class="swiper-button-prev" aria-label="Назад">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                        </svg>
+                    </button>
+                    <div class="swiper-pagination"></div>
+                    <button class="swiper-button-next" aria-label="Далее">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-slider__offer">
+            <div class="container">
+                <div class="gallery-slider__start">
+                    <h1 class="gallery-slider__title">Кубачи - Аул <br>Златокузнецов</h1>
+                    <a href="routes.html" class="back-to" aria-label="Закрыть"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of gallery slider -->
+    <!-- Route details -->
+    <div class="routes-details" id="route-details">
+        <div class="route-details__content">
+            <div class="container">
+                <div class="route-details__wrapper">
+                    <div class="route-details__left">
+                        <div class="route-details__duration">
+                            <h3 class="route-details__time">12 <span>ч</span></h3>
+                            <span class="route-details__help">Длительность тура:</span>
+                        </div>
+                        <div class="route-details__info">
+                            <span class="route-details__icon"></span>
+                            <span class="route-details__text">
+                                <b>2 дня</b>
+                            </span>
+                            <span class="route-details__text">
+                                <b>1 ночь</b>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="route-details__right content">
+                        <h2>Описание</h2>
+                        <p>Интерьер паназиатского кафе на пересечении Баумана и Университетской переносит в Японию: много зелени, панорамные окна, деревянные столики, на стенах неоновая манэки-нэко и аниме. Большое меню предлагает японскую, корейскую, китайскую, вьетнамскую, индийскую и тайскую кухни за приемлемые деньги. Кроме фирменного том-яма и всевозможных роллов здесь можно попробовать корейские бургеры, жареное мороженое и милкшейки. Местные жители приходят сюда на сытные бизнес-ланчи — особенно советуем «Морской»</p>
+                        <h2>Сервисы и услуги</h2>
+                        <p>
+                            Безналичная оплата<br>
+                            Обед (национальные блюда народов Дагестана)<br>
+                            Продолжительность экскурсии 4-12 часов
+                        </p>
+                        <h2>Как добраться</h2>
+                        <p>Ближайшие остановки —  «Площадь Тукая», <br>«Комбинат „Здоровье“»; ст. метро «Площадь Тукая»</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="route-details__map">
+            <img src="img/dist/route-map.png" alt="Map">
+        </div>
+    </div>
+    <!-- End of route details -->
+    <!-- Routes -->
+    <div class="routes routes--white" id="routes">
+        <div class="container">
+            <h2 class="section-heading">Маршруты</h2>
+            <div class="routes__wrapper routes__wrapper--nowrap">
+                <a href="route-details.html" class="routes__item" style="background-image: url(img/dist/routes-01.png);">
+                    <div class="routes__body">
+                        <div class="routes__info">
+                            <span class="routes__text">Длительность тура: 12ч</span>
+                            <span class="routes__text">2 дня / 1 ночь</span>
+                        </div>
+                        <span class="routes__name">КУБАЧИ – АУЛ ЗЛАТОКУЗНЕЦОВ</span>
+                    </div>
+                </a>
+                <a href="route-details.html" class="routes__item" style="background-image: url(img/dist/routes-02.png);">
+                    <div class="routes__body">
+                        <div class="routes__info">
+                            <span class="routes__text">Длительность тура: 12ч</span>
+                            <span class="routes__text">2 дня / 1 ночь</span>
+                        </div>
+                        <span class="routes__name">ГУНИБ - КРАСОТА ДАГЕСТАНА</span>
+                    </div>
+                </a>
+                <a href="route-details.html" class="routes__item" style="background-image: url(img/dist/routes-03.png);">
+                    <div class="routes__body">
+                        <div class="routes__info">
+                            <span class="routes__text">Длительность тура: 12ч</span>
+                            <span class="routes__text">2 дня / 1 ночь</span>
+                        </div>
+                        <span class="routes__name">ДЕРБЕНТ ЮЖНЫЕ ВОРОТА РОССИИ</span>
+                    </div>
+                </a>
+            </div>
+            <a href="routes.html" class="routes__more btn-circle btn-circle--black">Все</a>
+        </div>
+    </div>
+    <!-- End of routes -->
+    <!-- Scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

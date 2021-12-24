@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAGESTAN - Популярные места</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <div class="menu__closed-panel">
+            <button class="menu__close" aria-label="Закрыть"></button>
+        </div>
+        <div class="menu__control">
+            <input type="text" class="menu__input" placeholder="Что ищем?">
+            <span class="menu__search"></span>
+            <div class="menu__buttons menu__buttons--mobile">
+                <a href="#" class="menu__vision vision">
+                    <span class="vision__small">a</span>
+                    <span class="vision__big">A</span>
+                </a>
+                <a href="#" class="language menu__language">EN</a>
+            </div>
+        </div>
+        <div class="menu__start">
+            <div class="menu__wrapper">
+                <div class="menu__block">
+                    <a href="about.html" class="menu__heading">О Дагестане</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">История и народы Дагестана</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Что посмотреть</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Кухня дагестана</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="news.html" class="menu__link">События</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="guides.html" class="menu__link">Путеводители</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__heading">Гастрономия</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Кафе</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Рестораны</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Фудмолы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Рецепты блюд</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__heading">Популярные места</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Достопримечательности</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Отдых на природе</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Здоровье и красота</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Развлечения</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Шопинг</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__heading">Где остановиться?</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Отели</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Хостелы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Гостиници</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="routes.html" class="menu__heading">Маршруты</a>
+                </div>
+                <div class="menu__block">
+                    <a href="faq.html" class="menu__heading">Частые вопросы</a>
+                </div>
+            </div>
+            <div class="menu__buttons">
+                <a href="#" class="menu__vision vision">
+                    <span class="vision__small">a</span>
+                    <span class="vision__big">A</span>
+                </a>
+                <a href="#" class="language menu__language">EN</a>
+            </div>
+        </div>
+        <div class="menu__results">
+            <div class="tabs menu__tabs">
+                <ul class="tabs__list">
+                    <li class="tabs__item tabs__item--active">
+                        <button class="tabs__tab tabs__tab--grey">Гостиницы</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="tabs__tab tabs__tab--grey">Отели</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="tabs__tab tabs__tab--grey">Хостелы</button>
+                    </li>
+                </ul>
+                <div class="menu__scroll tabs__wrapper tabs__wrapper--active">
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как найти гостиницу?</h3>
+                        <div class="tabs__content">
+                            <p>решение по фотографии. Самое главное, что нужно знать, работая с сервисами бронирования <b>гостиниц</b> —&nbsp;фотографии, представленные на сайте бронирования, всегда или почти всегда будут далеки от реальности</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__scroll tabs__wrapper">
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как найти гостиницу?</h3>
+                        <div class="tabs__content">
+                            <p>решение по фотографии. Самое главное, что нужно знать, работая с сервисами бронирования <b>гостиниц</b> —&nbsp;фотографии, представленные на сайте бронирования, всегда или почти всегда будут далеки от реальности</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию <b>отелей</b> и гостиниц в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__scroll tabs__wrapper">
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как найти гостиницу?</h3>
+                        <div class="tabs__content">
+                            <p>решение по фотографии. Самое главное, что нужно знать, работая с сервисами бронирования <b>гостиниц</b> —&nbsp;фотографии, представленные на сайте бронирования, всегда или почти всегда будут далеки от реальности</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination menu__pagination">
+                <li class="pagination__item pagination__item--active">
+                    <a href="#" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of menu -->
+    <!-- Filters -->
+    <div class="filters" id="filters">
+        <div class="container">
+            <div class="filters__wrapper">
+                <div class="filters__left">
+                    <div class="filters__wrap filters__wrap--active">
+                        <div class="filters__header">
+                            <ul class="filters__list">
+                                <li class="filters__item">
+                                    <a href="#" class="filters__link">Достопримечательности</a>
+                                </li>
+                                <li class="filters__item">
+                                    <a href="#" class="filters__link">Шопинг</a>
+                                </li>
+                                <li class="filters__item">
+                                    <a href="#" class="filters__link">Отдых на природе</a>
+                                </li>
+                                <li class="filters__item">
+                                    <a href="#" class="filters__link">Развлечения</a>
+                                </li>
+                                <li class="filters__item">
+                                    <a href="#" class="filters__link">Здоровье и красота</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filters__body">
+                            <div class="c-countries filters__countries">
+                                <div class="c-countries__wrapper">
+                                    <h3 class="c-countries__title">Города</h3>
+                                    <ul class="c-countries__list">
+                                        <li class="c-countries__item">
+                                            <label for="filter-countries-01" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-countries-01" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Махачкала</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-countries-02" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-countries-02" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Махачкала</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-countries-03" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-countries-03" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Махачкала</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-countries-04" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-countries-04" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Надым</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-countries-05" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-countries-06" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Надым</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-countries-07" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-countries-07" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Махачкала</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-countries-08" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-countries-08" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Махачкала</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-countries-09" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-countries-09" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Махачкала</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="c-countries__wrapper">
+                                    <h3 class="c-countries__title">Селения</h3>
+                                    <ul class="c-countries__list">
+                                        <li class="c-countries__item">
+                                            <label for="filter-villages-01" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-villages-01" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Махачкала</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-villages-02" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-villages-02" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Махачкала</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-villages-03" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-villages-03" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Махачкала</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-villages-04" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-villages-04" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Надым</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-villages-05" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-villages-06" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Надым</span>
+                                            </label>
+                                        </li>
+                                        <li class="c-countries__item">
+                                            <label for="filter-villages-07" class="filter-btn c-countries__filter-btn">
+                                                <input type="radio" id="filter-villages-07" name="filter-countries" class="filter-btn__input">
+                                                <span class="filter-btn__label">Махачкала</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters__wrap filters__wrap--swipe">
+                        <div class="filters__header">
+                            <div class="filters__inner">
+                                <div class="filters__group">
+                                    <button class="filters__back">
+                                        <svg class="filters__back--icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-arrow-back"></use>
+                                        </svg>
+                                    </button>
+                                    <h2 class="filters__title">Шопинг</h2>
+                                </div>
+                                <button class="filters__more" aria-label="Подробный фильтр">
+                                    <svg class="filters__more--icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-filter"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="filters__body">
+                            <div class="c-objects filters__objects">
+                                <a href="#" class="c-objects__item">
+                                    <div class="c-objects__img" style="background-color: #D1AC0B;">
+                                        <span class="c-objects__img--title">СР</span>
+                                    </div>
+                                    <div class="c-objects__body">
+                                        <div class="c-objects__info">
+                                            <span class="c-objects__name">Сафар</span>
+                                            <ul class="rating rating--sm c-objects__rating">
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                            </ul>
+                                            <span class="c-objects__description">
+                                                Кафе (доставка)<br>
+                                                ул. Гаруна Курбанова, 40, Махачкала
+                                            </span>
+                                        </div>
+                                        <div class="c-objects__inner">
+                                            <span class="c-objects__price">От 180 ₽</span>
+                                            <span class="c-objects__help">сред чек</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="c-objects__item">
+                                    <picture class="c-objects__img">
+                                        <img src="img/dist/object-01.png" alt="Image">
+                                    </picture>
+                                    <div class="c-objects__body">
+                                        <div class="c-objects__info">
+                                            <span class="c-objects__name">Сафар</span>
+                                            <ul class="rating rating--sm c-objects__rating">
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                            </ul>
+                                            <span class="c-objects__description">
+                                                Кафе (доставка)<br>
+                                                ул. Гаруна Курбанова, 40, Махачкала
+                                            </span>
+                                        </div>
+                                        <div class="c-objects__inner">
+                                            <span class="c-objects__price">От 180 ₽</span>
+                                            <span class="c-objects__help">сред чек</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="c-objects__item">
+                                    <picture class="c-objects__img">
+                                        <img src="img/dist/object-02.png" alt="Image">
+                                    </picture>
+                                    <div class="c-objects__body">
+                                        <div class="c-objects__info">
+                                            <span class="c-objects__name">Ресторанус Хона</span>
+                                            <ul class="rating rating--sm c-objects__rating">
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                            </ul>
+                                            <span class="c-objects__description">
+                                                Ресторан<br>
+                                                ул. Белогвардейская 77777
+                                            </span>
+                                        </div>
+                                        <div class="c-objects__inner">
+                                            <span class="c-objects__price">От 19 000 ₽</span>
+                                            <span class="c-objects__help">сред чек</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="c-objects__item">
+                                    <picture class="c-objects__img">
+                                        <img src="img/dist/object-03.png" alt="Image">
+                                    </picture>
+                                    <div class="c-objects__body">
+                                        <div class="c-objects__info">
+                                            <span class="c-objects__name">Центральная Бургерная</span>
+                                            <ul class="rating rating--sm c-objects__rating">
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                            </ul>
+                                            <span class="c-objects__description">
+                                                Кафе<br>
+                                                улица Чекмагушевская 83
+                                            </span>
+                                        </div>
+                                        <div class="c-objects__inner">
+                                            <span class="c-objects__price">От 300 ₽</span>
+                                            <span class="c-objects__help">сутки</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="c-objects__item">
+                                    <picture class="c-objects__img">
+                                        <img src="img/dist/object-04.png" alt="Image">
+                                    </picture>
+                                    <div class="c-objects__body">
+                                        <div class="c-objects__info">
+                                            <span class="c-objects__name">Чай Хона</span>
+                                            <ul class="rating rating--sm c-objects__rating">
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                            </ul>
+                                            <span class="c-objects__description">
+                                                Кафе<br>
+                                                ул. Дрибалингина, д.2047
+                                            </span>
+                                        </div>
+                                        <div class="c-objects__inner">
+                                            <span class="c-objects__price">От 1000 ₽</span>
+                                            <span class="c-objects__help">сутки</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="c-objects__item">
+                                    <picture class="c-objects__img">
+                                        <img src="img/dist/object-05.png" alt="Image">
+                                    </picture>
+                                    <div class="c-objects__body">
+                                        <div class="c-objects__info">
+                                            <span class="c-objects__name">Рестор</span>
+                                            <ul class="rating rating--sm c-objects__rating">
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item rating__item--active">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                                <li class="rating__item">
+                                                    <span class="rating__star"></span>
+                                                </li>
+                                            </ul>
+                                            <span class="c-objects__description">
+                                                Рестик<br>
+                                                ул. Гарибальди, д.2047
+                                            </span>
+                                        </div>
+                                        <div class="c-objects__inner">
+                                            <span class="c-objects__price">От 1000 ₽</span>
+                                            <span class="c-objects__help">сутки</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters__wrap filters__wrap--swipe">
+                        <div class="filters__header">
+                            <div class="filters__inner">
+                                <h2 class="filters__title">Фильтр</h2>
+                                <button class="filters__close" aria-label="Закрыть"></button>
+                            </div>
+                        </div>
+                        <div class="filters__body">
+                            <form action="#" class="filter">
+                                <div class="filter__block">
+                                    <div class="filter__select-group">
+                                        <select class="select filter__select">
+                                            <option value="0">Города</option>
+                                            <option value="1">Махачкала</option>
+                                            <option value="2">Надым</option>
+                                            <option value="3">Махачкала</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter__select-group">
+                                        <select class="select filter__select">
+                                            <option value="0">Количество звезд</option>
+                                            <option value="1">1 звезда</option>
+                                            <option value="2">2 звезды</option>
+                                            <option value="3">3 звезды</option>
+                                            <option value="4">4 звезды</option>
+                                            <option value="5">5 звезд</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter__block">
+                                    <div class="filter__checkbox-list filter__checkbox-list--hidden">
+                                        <label for="filter-01" class="c-checkbox filter__checkbox">
+                                            <input type="checkbox" id="filter-01" name="filter" class="c-checkbox__input">
+                                            <span class="c-checkbox__icon"></span>
+                                            <span class="c-checkbox__label">Летняя веранда</span>
+                                        </label>
+                                        <label for="filter-02" class="c-checkbox filter__checkbox">
+                                            <input type="checkbox" id="filter-02" name="filter" class="c-checkbox__input">
+                                            <span class="c-checkbox__icon"></span>
+                                            <span class="c-checkbox__label">Доставка еды</span>
+                                        </label>
+                                        <label for="filter-03" class="c-checkbox filter__checkbox">
+                                            <input type="checkbox" id="filter-03" name="filter" class="c-checkbox__input">
+                                            <span class="c-checkbox__icon"></span>
+                                            <span class="c-checkbox__label">Детская зона</span>
+                                        </label>
+                                        <label for="filter-04" class="c-checkbox filter__checkbox">
+                                            <input type="checkbox" id="filter-04" name="filter" class="c-checkbox__input">
+                                            <span class="c-checkbox__icon"></span>
+                                            <span class="c-checkbox__label">Бизнес ланчи</span>
+                                        </label>
+                                        <label for="filter-05" class="c-checkbox filter__checkbox">
+                                            <input type="checkbox" id="filter-05" name="filter" class="c-checkbox__input">
+                                            <span class="c-checkbox__icon"></span>
+                                            <span class="c-checkbox__label">Круглосуточные</span>
+                                        </label>
+                                        <label for="filter-06" class="c-checkbox filter__checkbox">
+                                            <input type="checkbox" id="filter-06" name="filter" class="c-checkbox__input">
+                                            <span class="c-checkbox__icon"></span>
+                                            <span class="c-checkbox__label">Дополнительные</span>
+                                        </label>
+                                        <a href="#" class="filter__checkbox-more">Показать ещё</a>
+                                    </div>
+                                </div>
+                                <div class="filter__block">
+                                    <h3 class="filter__title">Средний чек</h3>
+                                    <div class="filter__inner">
+                                        <span class="filter__help">От ₽</span>
+                                        <input type="number" class="input filter__input" placeholder="100">
+                                        <span class="filter__help">До ₽</span>
+                                        <input type="number" class="input filter__input" placeholder="100000">
+                                    </div>
+                                </div>
+                                <button class="filter__btn btn btn--grey">Сбросить фильтр</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters__right">
+                    <!-- Header -->
+                    <header class="header header--section header--filter" id="header">
+                        <div class="container">
+                            <div class="header__wrapper">
+                                <ul class="header__list">
+                                    <li class="header__item">
+                                        <a href="index.html" class="header__link">Главная</a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a href="filter-popular.html" class="header__link">Популярные места</a>
+                                    </li>
+                                </ul>
+                                <div class="header__group">
+                                    <button class="hamburger header__hamburger" aria-label="Меню">
+                                        <svg class="hamburger__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-menu"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- End of header -->
+                    <div class="filters__map" id="YMapsID" style="width: 100%; height: 100vh;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of filters -->
+    <!-- Scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1562dfef-3d23-4d4e-a92a-5f59e60e149d&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(function () {
+          var myMap = new ymaps.Map("YMapsID", {
+            center: [42.983060, 47.504682],
+            zoom: 13,
+            controls: []
+          });
+        });
+    </script>
+</body>
+</html>

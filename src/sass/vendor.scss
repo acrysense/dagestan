@@ -1,0 +1,20 @@
+// FONTS LOAD SECTION
+@mixin font($fname, $fstyle, $fweight, $furl1, $furl2, $furl3) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		font-display: swap;
+        src: local($fname), url($furl1) format('woff2'), url($furl2) format('woff'), url($furl3) format('embedded-opentype');
+    }
+}
+
+@include font('AvenirNextCyr', normal, 400, '../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff2', '../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff', '../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot');
+@include font('AvenirNextCyr', normal, 500, '../fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff2', '../fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff', '../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot');
+@include font('AvenirNextCyr', normal, 600, '../fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff2', '../fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff', '../fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot');
+@include font('AvenirNextCyr', normal, 800, '../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.woff2', '../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.woff', '../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.eot');
+
+// IMPORT SECTION
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/swiper/swiper.scss'; // Swiper
+@import 'node_modules/slim-select/dist/slimselect'; // Slim Select

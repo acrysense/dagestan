@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAGESTAN - О Дагестане</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header--section" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="index.html" class="header__link">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="about.html" class="header__link">О Дагестане</a>
+                    </li>
+                </ul>
+                <div class="header__group">
+                    <button class="hamburger header__hamburger" aria-label="Меню">
+                        <svg class="hamburger__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <div class="menu__closed-panel">
+            <button class="menu__close" aria-label="Закрыть"></button>
+        </div>
+        <div class="menu__control">
+            <input type="text" class="menu__input" placeholder="Что ищем?">
+            <span class="menu__search"></span>
+            <div class="menu__buttons menu__buttons--mobile">
+                <a href="#" class="menu__vision vision">
+                    <span class="vision__small">a</span>
+                    <span class="vision__big">A</span>
+                </a>
+                <a href="#" class="language menu__language">EN</a>
+            </div>
+        </div>
+        <div class="menu__start">
+            <div class="menu__wrapper">
+                <div class="menu__block">
+                    <a href="about.html" class="menu__heading">О Дагестане</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">История и народы Дагестана</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Что посмотреть</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Кухня дагестана</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="news.html" class="menu__link">События</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="guides.html" class="menu__link">Путеводители</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__heading">Гастрономия</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Кафе</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Рестораны</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Фудмолы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Рецепты блюд</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__heading">Популярные места</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Достопримечательности</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Отдых на природе</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Здоровье и красота</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Развлечения</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Шопинг</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="#" class="menu__heading">Где остановиться?</a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Отели</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Хостелы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Гостиници</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__block">
+                    <a href="routes.html" class="menu__heading">Маршруты</a>
+                </div>
+                <div class="menu__block">
+                    <a href="faq.html" class="menu__heading">Частые вопросы</a>
+                </div>
+            </div>
+            <div class="menu__buttons">
+                <a href="#" class="menu__vision vision">
+                    <span class="vision__small">a</span>
+                    <span class="vision__big">A</span>
+                </a>
+                <a href="#" class="language menu__language">EN</a>
+            </div>
+        </div>
+        <div class="menu__results">
+            <div class="tabs menu__tabs">
+                <ul class="tabs__list">
+                    <li class="tabs__item tabs__item--active">
+                        <button class="tabs__tab tabs__tab--grey">Гостиницы</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="tabs__tab tabs__tab--grey">Отели</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="tabs__tab tabs__tab--grey">Хостелы</button>
+                    </li>
+                </ul>
+                <div class="menu__scroll tabs__wrapper tabs__wrapper--active">
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как найти гостиницу?</h3>
+                        <div class="tabs__content">
+                            <p>решение по фотографии. Самое главное, что нужно знать, работая с сервисами бронирования <b>гостиниц</b> —&nbsp;фотографии, представленные на сайте бронирования, всегда или почти всегда будут далеки от реальности</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__scroll tabs__wrapper">
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как найти гостиницу?</h3>
+                        <div class="tabs__content">
+                            <p>решение по фотографии. Самое главное, что нужно знать, работая с сервисами бронирования <b>гостиниц</b> —&nbsp;фотографии, представленные на сайте бронирования, всегда или почти всегда будут далеки от реальности</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию <b>отелей</b> и гостиниц в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__scroll tabs__wrapper">
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как найти гостиницу?</h3>
+                        <div class="tabs__content">
+                            <p>решение по фотографии. Самое главное, что нужно знать, работая с сервисами бронирования <b>гостиниц</b> —&nbsp;фотографии, представленные на сайте бронирования, всегда или почти всегда будут далеки от реальности</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Наплыв туриствов</h3>
+                        <div class="tabs__content">
+                            <p>По городу начали работать десятки <b>гостиниц</b> , похоже на то что Дагестанский край начинает процветать больши колличеством туристов.</p>
+                        </div>
+                    </div>
+                    <div class="tabs__group">
+                        <h3 class="tabs__title">Как не ошибиться при выборе отеля, или о чем молчат сервисы бронирования</h3>
+                        <div class="tabs__content">
+                            <p>
+                                директор по маркетингу сервиса онлайн-курсов «Нетология», делится своим очень богатым 
+                                опытом по бронированию отелей и <b>гостиниц</b> в разных странах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination menu__pagination">
+                <li class="pagination__item pagination__item--active">
+                    <a href="#" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of menu -->
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <!-- About main -->
+        <div class="about-main" id="about-main">
+            <div class="container">
+                <div class="about-main__wrapper">
+                    <h1 class="about-main__title">Добро пожаловать <br>в Дагестан!</h1>
+                </div>
+            </div>
+        </div>
+        <!-- End of about main -->
+        <!-- About -->
+        <div class="about" id="about">
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-content__left content">
+                        <p>Удивительная природа, великая история, богатое культурное наследие, уникальное культурно-этнографическое и лингвистическое разнообразие Дагестана всегда привлекали сюда множество археологов, этнографов, путешественников со всего мира.</p>
+                        <h2>История</h2>
+                        <p>По количеству и значимости объектов культурного наследия Дагестан занимает особое место Российской Федерации. В республике расположено 6474 объектов культурного наследия (памятников истории и культуры), из них 1994 объекта культурного наследия федерального значения и  4514 единиц регионального значения, включая историко-архитектурные комплексы и достопримечательные места.  На территории Дагестана расположен один из древнейших городов нашей страны – Дербент, со знаменитой цитаделью крепостью "Нарын-Кала" признанной ЮНЕСКО памятником мирового значения. Через Дербент в свое время проходил легендарный торгово-караванный маршрут, известный в истории как "Великий шелковый путь".</p>
+                    </div>
+                    <div class="section-content__right">
+                        <picture class="section-content__img">
+                            <img src="img/dist/arms.png" alt="Arms">
+                        </picture>
+                        <picture class="section-content__img">
+                            <img src="img/dist/flag.svg" alt="Flag">
+                        </picture>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gallery__wrapper">
+                        <div class="gallery__item">
+                            <div class="gallery__inner">
+                                <img src="img/dist/about-01.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="gallery__inner">
+                                <img src="img/dist/about-02.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="gallery__inner">
+                                <img src="img/dist/about-03.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="gallery__inner">
+                                <img src="img/dist/about-04.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="gallery__inner">
+                                <img src="img/dist/about-05.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div class="section-content__left content">
+                        <h2>Туризм</h2>
+                        <p>Однако не только древний Дербент интересен и востребован туристами. Внимание путешественников привлекают также, теплое побережье Каспийского моря, одно из наиболее величественных творений природы в России - уникальный Сулакский каньон, высочайшая в Европе песчаная гора - «Сарыкум»; единственный в России субтропический лиановый Самурский лес, международная «мекка» альпинистов-экстремалов г. Ярыдаг, древняя мечеть IX в. «Кала-Корейш»; старинные боевые башни в с. Кахиб и Гоор, Гунибская и Ахтынская крепости времен Кавказской войны XIX века и многое другое.</p>
+                        <div class="image-block">
+                            <img src="img/dist/content-image.png" alt="Image">
+                            <img src="img/dist/content-image.png" alt="Image">
+                        </div>
+                        <p>Сегодня Республика Дагестан входит в число наиболее устойчиво развивающихся регионов России. Активизация государственной политики в области туризма в Республике Дагестан привела к тому, что ускоренными темпами реализуются проекты призванные  сформировать новую, современную  базу отдыха и оздоровления. Наращивается и модернизируется инфраструктура туризма. За последние годы здесь построены и введены в эксплуатацию десятки современных средств размещения – гостиницы, турбазы, санатории, гостевые дома. Успешно реализуется проект создания  на путях следования  основных маршрутов - туристских «хабов», в том числе нового брендового туристского маршрута «Легенды Дагестана».</p>
+                        <p class="text-indent">В Дагестане хорошо отдыхать и путешествовать в любое время года. Весной и осенью, летом и зимой сюда стремятся любители пляжного отдыха  и горного туризма, этнографы и историки, охотники и рыболовы, ценители вкусной и экологически чистой еды. Все это и многое другое мы предлагаем нашим дорогим гостям!</p>
+                        <hr>
+                        <p class="cap">
+                            Вас ждут в Дагестане радушие, гостеприимство и невероятно яркие впечатления! <br>
+                            Самая главная ценность Дагестана - его жители, которое сегодня говорят:<br><br>
+                            Добро пожаловать в древний и прекрасный Дагестан!
+                        </p>
+                        <p></p>
+                    </div>
+                    <div class="section-content__right"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End of about -->
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="#" class="footer__vision vision">
+                        <span class="vision__small">a</span>
+                        <span class="vision__big">A</span>
+                    </a>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О Дагестанском крае</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Гиды и помощники</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Гастрономия</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Туризм</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Гостиницы / Отели</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Сервисы / Компании</a>
+                        </li>
+                    </ul>
+                    <div class="footer__block">
+                        <span class="footer__subtitle">Мы в соц сетях</span>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" aria-label="ВКонтакте">
+                                    <svg class="socials__icon socials__icon--vk">
+                                        <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" aria-label="Instagram">
+                                    <svg class="socials__icon socials__icon--instagram">
+                                        <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" aria-label="Facebook">
+                                    <svg class="socials__icon socials__icon--facebook">
+                                        <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="mailto:mintur@mail.ru" class="footer__email">mintur@mail.ru</a>
+                        <a href="#" class="footer__policy">Политика обработки персональных данных</a>
+                        <p class="footer__copyright">©2021 все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End of footer -->
+    </div>
+    <!-- End of wrapper -->
+    <!-- Scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
